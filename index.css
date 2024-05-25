@@ -1,0 +1,449 @@
+header {
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-style: unset;
+}
+
+
+*{
+    scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #363636;
+    box-sizing: border-box;
+    
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Cor de Fundo do Menu */
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Define a Direção como Horizontal */
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline; /* Não necessário se estiver usando flexbox */
+
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; /* Espaçamento Interno dos Itens */
+    text-decoration: none;
+    color: #fff; /* Cor do Texto */
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: purple; /* Cor de Fundo ao Passar o Mouse */
+    border-radius: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+
+/* Estilos para a seção de cabeçalho */
+header {
+    background: url('img/ImageProgamation.png');
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+
+}
+header h1 {
+    font-size: 50px;
+}
+
+header h2{
+
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+header .container .imagemDFe{
+    margin-bottom: 100px;
+}
+
+/* Estilos para a seção Sobre */
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1em;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 55px;
+}
+
+.about .reachMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.about .reachMe .container {
+    width: 100%;
+    width: 100%; /* Define a largura da caixa */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    background: linear-gradient(to right, rgba(11, 226, 241, 0.945), rgba(144, 7, 236, 0.979));
+    margin-right: 40px;
+    border-radius: 50px;
+    margin-bottom: 120px;
+    
+}
+
+.about .reachMe .container a{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+}
+
+.about .reachMe .container h2 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .reachMe .container p {
+    text-indent: 1em;
+    text-align: justify;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: white;
+
+}
+
+.about .imageContainer img {
+    border-radius: 30px;
+    box-shadow: 
+  7px 7px 12px rgba(0, 0, 0, 0.5),
+  -5px -5px 10px rgba(255, 255, 255, 0.5);
+
+}
+
+.reachMeIcon {
+    margin-top: 100px;
+    cursor: pointer;
+    opacity: 0.80;
+    transition: all 0.3s ease;
+}
+
+.reachMeIcon:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    transition: 3s ease;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3823b1;
+    border-radius: 8px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para a seção de social medias  */
+#socialMedias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+
+/* Estilos para a seção de portfólio */
+/*#portfolio {
+    background-color: #f4f4f4;
+    padding: 200px;
+    
+}
+#portfolio h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10px;
+    font-family: cursive;
+}*/
+/*.portfolio-item {
+    margin-bottom: 30px;
+    margin-top: 300px;
+}
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}*/
+
+/* Estilos para a seção de contato */
+#contact {
+    background-image: url('img/ImageProgamation.png');
+    background-size: cover; /* ajusta a imagem para cobrir todo o contêiner */
+    background-repeat: no-repeat; /* impede a repetição da imagem */
+    background-position: center; /* posiciona a imagem no centro do contêiner */
+    padding: 50px 20px;
+}
+#contact h2 {
+    text-align: center;
+    color: black;
+}
+#contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+}
+#contact input[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.containerPortfolio {
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerPortfolioTitle {
+
+    width: 100%;
+    text-align: center;
+    background-color: #8b7ed6;
+    font-size: 25px;
+    padding: 100px 0px;
+
+}
+
+.containerPortfolioItems {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-x: auto;
+    padding: 100px 0px;
+
+    background-color:rgb(221, 230, 238);
+}
+
+.portfolioItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+button,
+button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+ cursor: pointer;
+}
+
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
