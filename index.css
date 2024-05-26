@@ -298,9 +298,11 @@ header .container .imagemDFe{
 
     width: 100%;
     text-align: center;
-    background-color: #8b7ed6;
+    background-color: #712992;
     font-size: 25px;
     padding: 100px 0px;
+    color: white;
+    font-family: cursive;
 
 }
 
