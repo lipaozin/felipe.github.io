@@ -30,11 +30,11 @@ nav ul {
     display: flex; /* Ativa o Flexbox */
     flex-direction: row; /* Define a Direção como Horizontal */
     justify-content: flex-end;
+
 }
 
 nav ul li {
     display: inline; /* Não necessário se estiver usando flexbox */
-
 }
 
 nav ul li a {
@@ -42,13 +42,15 @@ nav ul li a {
     padding: 10px 20px; /* Espaçamento Interno dos Itens */
     text-decoration: none;
     color: #fff; /* Cor do Texto */
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 
 nav ul li a:hover {
     background-color: purple; /* Cor de Fundo ao Passar o Mouse */
     border-radius: 20px;
-    transform: translateY(5px);
+    transform: translateY(2px);
+    font-size: 1.1em;
+
 }
 
 h2, h3 {
@@ -79,24 +81,22 @@ header h2{
 
 
 @keyframes move{
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+
+
 }
 
+#title1, #title2, #experienciastitle{
 
+    animation: move 0.5s ease alternate infinite;
 
+}
 
-/*.container .move{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-}*/
 
 header .container .imagemDFe{
     margin-bottom: 100px;
@@ -249,7 +249,6 @@ header .container .imagemDFe{
 
 
 
-
 /* Estilos para a seção de social medias  */
 #socialMedias {
     display: flex;
@@ -344,8 +343,6 @@ header .container .imagemDFe{
 
 .containerPortfolioTitle h1 {
 
-    transition: all 0.6s ease;
-    cursor: pointer;
     color: #f1f1f1;
 
 }
@@ -476,8 +473,73 @@ button:hover::after {
 
 
 
+footer {
+
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
 
 
+
+
+.loading svg polyline {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .loading svg polyline#back {
+    fill: none;
+    stroke: #ff4d5033;
+  }
+  
+  .loading svg polyline#front {
+    fill: none;
+    stroke: #c300ff;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 2s linear infinite;
+    animation-delay: 0s;
+  }
+  
+  .loading svg polyline#front2 {
+    fill: none;
+    stroke: #0077ffe8;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes dash_682 {
+    72.5% {
+      opacity: 0;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
 
 
 
