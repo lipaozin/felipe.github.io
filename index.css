@@ -21,17 +21,30 @@ body {
     
 }
 
+.LogoLipe{
+    height: 60px;
+    width: 75px;
+    position: absolute;
+    left: 1em;
+    top: -6px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 12px;
     background-color: #333; /* Cor de Fundo do Menu */
     display: flex; /* Ativa o Flexbox */
     flex-direction: row; /* Define a Direção como Horizontal */
     justify-content: flex-end;
 
 }
+
+
 
 nav ul li {
     display: inline; /* Não necessário se estiver usando flexbox */
@@ -99,7 +112,9 @@ header h2{
 
 
 header .container .imagemDFe{
-    margin-bottom: 100px;
+
+    width: 100px;
+    height: 75px;
 }
 
 /* Estilos para a seção Sobre */
@@ -159,7 +174,7 @@ header .container .imagemDFe{
 .about .reachMe .container p {
     text-indent: 1em;
     text-align: justify;
-    margin-bottom: 100px;
+    margin-bottom: 45px;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 16px;
