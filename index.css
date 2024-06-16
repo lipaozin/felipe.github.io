@@ -22,14 +22,18 @@ body {
 }
 
 .LogoLipe{
-    height: 60px;
-    width: 75px;
+    height: 100px;
     position: absolute;
     left: 1em;
-    top: -6px;
+    top: -15px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    transition: all 0.8s ease;
+}
+.LogoLipe:hover{
+
+    transform: translateY(-3px);
 }
 
 
@@ -102,6 +106,18 @@ header h2{
     }
 
 
+}
+
+@keyframes moveAbout{
+    from{
+        transform: translateX(-10);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+#aboutMe{
+    animation: moveAbout 0.5 ease alternative;
 }
 
 #title1, #title2, #experienciastitle{
