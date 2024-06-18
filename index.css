@@ -120,7 +120,7 @@ header h2{
     animation: moveAbout 0.5 ease alternative;
 }
 
-#title1, #title2, #experienciastitle{
+#title1, #title2, #title3, #experienciastitle{
 
     animation: move 0.5s ease alternate infinite;
 
@@ -211,7 +211,7 @@ header .container .imagemDFe{
 
 
 .about .imageContainer img {
-    height: 750px;
+    height: 700px;
     width: auto;
     border-radius: 30px;
     box-shadow: 
