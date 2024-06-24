@@ -5,6 +5,7 @@ header {
     justify-content: center;
     font-family: cursive;
     font-style: unset;
+    padding-inline: 16px;
 }
 
 
@@ -52,6 +53,7 @@ nav ul {
 
 nav ul li {
     display: inline; /* Não necessário se estiver usando flexbox */
+    padding-block: 16px;
 }
 
 nav ul li a {

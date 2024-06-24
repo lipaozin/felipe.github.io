@@ -1,23 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luís Felipe - Portfolio</title>
+
+  <!-- manifest -->
+  <link rel="manifest" href="./manifest.webmanifest">
+
+  <!-- logotipo -->
+  <link rel="icon" href="./img/favicon-32x32.png" /> <!-- 512x512 -->
+  <link rel="apple-touch-icon" href="./img/favicon-32x32.png" /> <!-- 180x180 -->
+  <link rel="shortcut icon" href="./img/favicon-32x32.png" /> <!-- 180x180 -->
+
+  <!-- metas -->
+  <meta charset="utf-8" />
+  <meta http-equiv="content-language" content="en" />
+  <meta name="theme-color" content="#333" />
+  <meta name="author" content="@Lipão" />
+  <meta name="keywords" content="web, react, node, lipaozin, github, github.io" />
+  <meta name="description" content="LIPÃO VIADÃO" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <!-- Open Graph (OG)
+    - tutorial: https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing
+
+    - generate image: https://placid.app/tools/free-open-graph-image-generator?utm_source=socialsharepreview&utm_medium=inline_og_image_generator&utm_campaign=permanent
+
+    - preview og 1: https://socialsharepreview.com/?url=https://csfelix.github.io
+
+    - preview og 2: https://www.opengraph.xyz/url/https%3A%2F%2Fcsfelix.github.io
+  -->
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:title" content="Luís Felipe - Portfolio" />
+  <meta property="og:url" content="https://lipaozin.github.io/" />
+  <meta property="og:description" content="LIPÃO VIADÃO" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="lipão_viadão.png" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="lipaozin.github.io">
+  <meta property="twitter:url" content="https://lipaozin.github.io">
+  <meta name="twitter:title" content="Luís Felipe - Portfolio">
+  <meta name="twitter:description" content="LIPÃO VIADÃO">
+  <meta name="twitter:image" content="lipão_viadão.png" />
+
   <link rel="stylesheet" href="index.css">
-  <title>Luís Felipe</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+  <script defer src="app.js"></script>
 </head>
 
 
 
 <body>
+
+
+  <!--Menu para Desktop-->
+  
   <nav class="menu">
           <a href="https://github.com/lipaozin/" target="_blank">
           <img class="LogoLipe" src="img/LogoPortfolio.svg">
         </a>
    
-      <ul>
-          <!-- <li><a href="#menu">Início</a></li> -->
+      <ul class="nav-list">
           <li><a href="#about">Sobre Mim</a></li>
           <li><a href="#portfolio">Experiências</a></li>
           <li><a href="#contact">Contato</a></li>          
@@ -37,7 +82,7 @@
   </header>
 
 
-
+<main class="hero"></main>
 
 
 
@@ -47,17 +92,14 @@
               <h2 id="aboutMe">Sobre Mim</h2>
               <p>Olá, meu nome é Luís Felipe e sou programador Júnior, com desejo de atuar na área e adquirir conhecimento da mesma. Desde que iniciei minha jornada na programação, venho me dedicando a aprimorar minhas habilidades e a entender melhor as diversas nuances que compõem esse vasto campo de estudo. A programação sempre foi uma paixão para mim, e tenho um entusiasmo imenso em aprender novas tecnologias e aplicá-las de maneira prática.</p>
               <p>Meu foco principal com este site é aprender e aplicar conhecimentos voltados ao desenvolvimento Web, tais como uso das linguagens de HTML, CSS, Javascript, Java, dentre outras. O desenvolvimento Web é uma área dinâmica e em constante evolução, e eu acredito que manter-se atualizado com as últimas tendências e práticas é essencial para qualquer profissional. Por isso, além de estudar essas linguagens, também estou explorando frameworks e bibliotecas modernas que podem agilizar e otimizar o processo de desenvolvimento, como React, Angular e Vue.js para front-end, e Node.js e Spring Boot para back-end.</p>
-                  <p>Atualmente, trabalho presencialmente na empresa FX Sistemas, onde executo a função de Suporte Técnico (Helpdesk). A empresa é responsável por desenvolver e prestar serviço para sistemas de diversas áreas, tais como Contabilidade, Financeiro, Folha de Pagamento, Escrita Fiscal, Gestão de Escritório, dentre outros. No meu papel, lido diretamente com a resolução de problemas técnicos, oferecendo suporte a usuários finais e garantindo que os sistemas funcionem de maneira eficiente. Esta experiência tem sido extremamente valiosa, pois me permite entender melhor as necessidades dos usuários e como os sistemas podem ser melhorados para atender a essas necessidades. Além disso, a exposição a diferentes tipos de sistemas e problemas me proporciona uma visão ampla e diversificada do ambiente de TI.<br>
+                  <p>Atualmente, trabalho presencialmente na empresa FX Sistemas, onde executo a função de Suporte Técnico (Helpdesk). A empresa é responsável por desenvolver e prestar serviço para sistemas de diversas áreas, tais como Contabilidade, Financeiro, Folha de Pagamento, Escrita Fiscal, Gestão de Escritório, dentre outros. No meu papel, lido diretamente com a resolução de problemas técnicos, oferecendo suporte a usuários finais e garantindo que os sistemas funcionem de maneira eficiente. <br>
                   </p>
-                  <!--<p>Com o avanço da tecnologia, vejo um futuro promissor para o desenvolvimento Web e estou entusiasmado para fazer parte dessa evolução. Espero que através deste site, eu possa compartilhar minha jornada de aprendizado, ajudar outros iniciantes na área e, quem sabe, colaborar com projetos inovadores que façam a diferença. Acredito que o conhecimento deve ser compartilhado e estou comprometido em contribuir para a comunidade de desenvolvedores com tudo o que aprendi e ainda vou aprender.</p>
-                  <a href="https://www.fxsistemas.com.br/">
-                    <img src="img/fxsistemas-logoMenor.png" alt="Site FX Sistemas">-->
                 </a>
           </div>
       </div>
 
       <div class="imageContainer">
-          <img src="img/Eu.jfif" alt="Eu">    
+          <img src="img/Eu.webp" alt="Eu">    
       </div>
   </section>
 
