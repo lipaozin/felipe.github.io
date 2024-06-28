@@ -23,10 +23,10 @@ body {
 }
 
 .LogoLipe{
-    height: 100px;
+    height: 45px;
     position: absolute;
-    left: 1em;
-    top: -15px;
+    left: 2em;
+    top: 20px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -131,8 +131,8 @@ header h2{
 
 header .container .imagemDFe{
 
-    width: 100px;
-    height: 75px;
+    width: 120px;
+   
 }
 
 /* Estilos para a seção Sobre */
