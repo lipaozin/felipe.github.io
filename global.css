@@ -1,0 +1,106 @@
+/*
+
+    1 - adicionar comentário explicando o que cada linha do reset (*) faz
+
+    2 - adicionar variáveis pelo menos para o background-color
+
+    3 - fazer tudo isso num arquivo css novo chamado "global.css" e importá-lo primeiro de todos no html
+
+    4 - setar o comprimento da imagem e deixar altura automática
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ***********
+    ** Reset **
+    ***********
+*/
+* {
+    margin:  0;   /* Faz com que não tenha margem em nenhuma parte da DIV e da borda da tela*/
+    padding:  0;  /* Faz com que não tenha espaçamento em nenhuma parte da DIV e da borda da tela*/
+    outline:  none; /* Tira o "grifado" do texto, quando ele é um hyperlink*/
+    list-style: none; /* Faz com que não tenha aquela lista separada por tópicos(pontinhos)*/
+    box-sizing: border-box; /* Faz com que a Div se ajuste ao tamanho da tela, independente da resolução*/
+    text-decoration: none; /*Seria a decoração do testo, se ele for uma tag <a> por exemplo, faz com que não fique aparente*/
+    scroll-behavior: smooth; /* Faz com que o Scroll(rolamento da tela) fique de forma mais devagar, para melhor visualização*/
+    vertical-align: baseline; /* Ajustar o alinhamento vertical de um elemento em relação à linha de base da sua linha contêiner*/
+
+    user-select: none;  /* Não permite o usuário selecionar e ficar arrastando o texto da página*/
+    user-drag: none;    /* Não permite o usuário selecionar e arrastar a imagem da página*/
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+
+
+
+
+
+/*
+    ***************
+    ** Variables **
+    ***************
+*/
+:root {
+    --background-color-1: #041f36;
+    --background-color-2: #0a394d;
+    --background-color-3: #f8f8ff; /* footer */
+    --background-color-4: #c6c6c6; /* mobile menu options on hover */
+
+    --color-1: #f6f6ff;
+    --color-2: #f8f8ff;
+    --color-3: #c3c3c3;
+    --color-4: #7f4d96;
+
+    --text-shadow-color: #7159c1; /* header */
+    --progress-bar-background-color: #767676;
+
+    --font-1: Roboto Mono;
+    --font-2: Roboto;
+    --font-3: sans-serif;
+
+    --skills-card-height: 200px;
+      --skills-card-width: calc(var(--skills-card-height) / 1.5);
+}
+
+
+
+
+/* Estilização da Div que devo criar com a Imagem e o Sobre mim */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+   }
+
+
+
+
+
+
+ /*
+  ************
+  ** Mobile **
+  ************
+*/
+@media only screen and (max-width: 850px) {
+    .skillsContentsSubContainer { justify-content: center; }
+  }
