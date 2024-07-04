@@ -1,196 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luís Felipe - Portfolio</title>
-
-  <!-- manifest -->
   <link rel="manifest" href="./manifest.webmanifest">
-
-  <!-- logotipo -->
-  <link rel="icon" href="./img/android-chrome-512x512.png" /> <!-- 512x512 -->
-  <link rel="apple-touch-icon" href="./img/favicon-180x180.png" /> <!-- 180x180 -->
-  <link rel="shortcut icon" href="./img/favicon-180x180.png" /> <!-- 180x180 -->
-
-  <!-- metas -->
-  <meta charset="utf-8" />
-  <meta http-equiv="content-language" content="en" />
-  <meta name="theme-color" content="#333" />
-  <meta name="author" content="@Lipão" />
-  <meta name="keywords" content="web, react, node, lipaozin, github, github.io, portfolio, emprego, contratação, curriculo" />
-  <meta name="description" content="Welcome to my portfolio, excited to see you here!          " />
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-
-  <!-- Open Graph (OG)
-    - tutorial: https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing
-
-    - generate image: https://placid.app/tools/free-open-graph-image-generator?utm_source=socialsharepreview&utm_medium=inline_og_image_generator&utm_campaign=permanent
-
-    - preview og 1: https://socialsharepreview.com/?url=https://lipaozin.github.io
-
-    - preview og 2: https://www.opengraph.xyz/url/https%3A%2F%2Fcsfelix.github.io
-  -->
-
-  <!-- Facebook Meta Tags -->
-  <meta property="og:title" content="This is my professional Portfolio, Come here!" />
-  <meta property="og:url" content="https://lipaozin.github.io/" />
-  <meta property="og:description" content="Welcome to my portfolio, excited to see you here!          " />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
+  <link rel="icon" href="./img/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="./img/favicon-180x180.png">
+  <link rel="shortcut icon" href="./img/favicon-180x180.png">
+  <meta name="theme-color" content="#333">
+  <meta name="author" content="@Lipão">
+  <meta name="keywords" content="web, react, node, lipaozin, github, github.io, portfolio, emprego, contratação, curriculo">
+  <meta name="description" content="Welcome to my portfolio, excited to see you here!">
+  <meta property="og:title" content="This is my professional Portfolio, Come here!">
+  <meta property="og:url" content="https://lipaozin.github.io/">
+  <meta property="og:description" content="Welcome to my portfolio, excited to see you here!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://lipaozin.github.io/og-img/ImagemOG.png">
-
-  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="lipaozin.github.io">
   <meta property="twitter:url" content="https://lipaozin.github.io">
   <meta name="twitter:title" content="Luís Felipe - Portfolio">
-  <meta name="twitter:description" content="Welcome to my portfolio, excited to see you here!          ">
-  <meta property="og:image" content="https://lipaozin.github.io/og-img/ImagemOG.png">  
-
+  <meta name="twitter:description" content="Welcome to my portfolio, excited to see you here!">
+  <meta property="og:image" content="https://lipaozin.github.io/og-img/ImagemOG.png">
   <link rel="stylesheet" href="index.css">
   <script defer src="app.js"></script>
 </head>
-
-
-
 <body>
-
-
   <!--Menu para Desktop-->
-  
   <nav class="menu">
-          <a href="https://github.com/lipaozin/" target="_blank">
-          <img class="LogoLipe" src="img/logoLipao.svg">
-        </a>
-   
-      <ul class="nav-list">
-          <li><a href="#about">Sobre Mim</a></li>
-          <li><a href="#portfolio">Experiências</a></li>
-          <li><a href="#contact">Contato</a></li>          
-      </ul>
-  </nav>
-  
-
-
-  <header>
-      <div class="container">
-
-          <h1 id="title1">Luís Felipe  Cremonez</h1>
-          <h2 id="title2">Full-Stack Developer</h2>
-
-          <img id="title3" class="imagemDFe" src="img/logoLipao.svg">
-      </div>
-  </header>
-
-
-<main class="hero"></main>
-
-
-
-  <section id="about" class="about">
-      
-    <div class="aboutMeContainer">
-
-    <div class="reachMe">
-          <div class="container">
-              <h2 id="aboutMe">Sobre Mim</h2>
-              <p>Olá, meu nome é Luís Felipe e sou programador Júnior, com desejo de atuar na área e adquirir conhecimento da mesma. Desde que iniciei minha jornada na programação, venho me dedicando a aprimorar minhas habilidades e a entender melhor as diversas nuances que compõem esse vasto campo de estudo. A programação sempre foi uma paixão para mim, e tenho um entusiasmo imenso em aprender novas tecnologias e aplicá-las de maneira prática.</p>
-              <p>Meu foco principal com este site é aprender e aplicar conhecimentos voltados ao desenvolvimento Web, tais como uso das linguagens de HTML, CSS, Javascript, Java, dentre outras. O desenvolvimento Web é uma área dinâmica e em constante evolução, e eu acredito que manter-se atualizado com as últimas tendências e práticas é essencial para qualquer profissional. Por isso, além de estudar essas linguagens, também estou explorando frameworks e bibliotecas modernas que podem agilizar e otimizar o processo de desenvolvimento, como React, Angular e Vue.js para front-end, e Node.js e Spring Boot para back-end.</p>
-                  <p>Atualmente, trabalho presencialmente na empresa FX Sistemas, onde executo a função de Suporte Técnico (Helpdesk). A empresa é responsável por desenvolver e prestar serviço para sistemas de diversas áreas, tais como Contabilidade, Financeiro, Folha de Pagamento, Escrita Fiscal, Gestão de Escritório, dentre outros. No meu papel, lido diretamente com a resolução de problemas técnicos, oferecendo suporte a usuários finais e garantindo que os sistemas funcionem de maneira eficiente. <br>
-                  </p>
-                </a>
-          </div>
-      </div>
-
-      <div class="imageContainer">
-          <img src="img/Eu.webp" alt="Eu">    
-      </div>
-
+    <a href="https://github.com/lipaozin/" target="_blank">
+      <img class="LogoLipe" src="img/logoLipao.svg">
+    </a>
+    <ul class="nav-list">
+      <li><a href="#about">Sobre Mim</a></li>
+      <li><a href="#portfolio">Experiências</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-
-
-
+  </nav>
+  <header>
+    <div class="container">
+      <h1 id="title1">Luís Felipe Cremonez</h1>
+      <h2 id="title2">Full-Stack Developer</h2>
+      <img id="title3" class="imagemDFe" src="img/logoLipao.svg">
+    </div>
+  </header>
+  <main class="hero"></main>
+  <section id="about" class="about">
+    <div class="aboutMeContainer">
+      <div class="reachMe">
+        <div class="container">
+          <h2 id="aboutMe">Sobre Mim</h2>
+          <p>Olá, meu nome é Luís Felipe e sou programador Júnior, com desejo de atuar na área e adquirir conhecimento da mesma...</p>
+          <p>Meu foco principal com este site é aprender e aplicar conhecimentos voltados ao desenvolvimento Web...</p>
+          <p>Atualmente, trabalho presencialmente na empresa FX Sistemas, onde executo a função de Suporte Técnico (Helpdesk)...</p>
+        </div>
+      </div>
+      <div class="imageContainer">
+        <img src="img/Eu.webp" alt="Eu">
+      </div>
+    </div>
   </section>
-
   <section id="socialMedias">
     <div>
-        <a style="margin-right: 50px;" href="https://github.com/lipaozin" target="_blank">
-            <img class="reachMeIcon" src="img/github-original.svg" alt="Meu GitHub" width="75px" height="75px" />
-        </a>
-
-        <a style="margin-right: 50px;" href="https://www.linkedin.com/in/luis-felipe-cremonez-80aa3b230/" target="_blank">
-            <img class="reachMeIcon" src="img/linkedin-plain.svg" alt="Logo do GitHub" width="75px" height="75px" />
-        </a>
-
-        <a style="margin-right: 50px;" href="https://www.instagram.com/iamlipao/" target="_blank">
-            <img class="reachMeIcon" src="img/InstaLogo.png" alt="Logo do instagram" width="75px" height="75px" />
-        </a>
-
-        
+      <a style="margin-right: 50px;" href="https://github.com/lipaozin" target="_blank">
+        <img class="reachMeIcon" src="img/github-original.svg" alt="Meu GitHub" width="75px" height="75px">
+      </a>
+      <a style="margin-right: 50px;" href="https://www.linkedin.com/in/luis-felipe-cremonez-80aa3b230/" target="_blank">
+        <img class="reachMeIcon" src="img/linkedin-plain.svg" alt="Logo do GitHub" width="75px" height="75px">
+      </a>
+      <a style="margin-right: 50px;" href="https://www.instagram.com/iamlipao/" target="_blank">
+        <img class="reachMeIcon" src="img/InstaLogo.png" alt="Logo do instagram" width="75px" height="75px">
+      </a>
     </div>
   </section>
 
-  <a href="https://api.whatsapp.com/send?phone=18991592232" class="whatsapp-float" target="_blank">
-      <img  class="reachMeIcon" src="img/whatsapp-transparent-23.png" alt="Ícone do WhatsApp">
-  </a>
+    <a
+      href="https://api.whatsapp.com/send?phone=18991592232"
+      class="whatsapp-float"      
+      target="_blank"
+    >
+      <img 
+        class="reachMeIcon"      
+        src="./img/whatsapp-transparent-23.png"
+        alt="Ícone do WhatsApp"
+        width="40px"
+        height="40px"
+      />
+    </a>
 
-  <section  id="portfolio" class="containerPortfolio">
+  <section id="portfolio" class="containerPortfolio">
     <div class="containerPortfolioTitle">
       <h1 id="experienciastitle">Experiências</h1>
     </div>
-
     <div class="containerPortfolioItems">
       <div class="portfolioItem">
-          <img src="img/IconPrefeitura.png" alt="Prefeitura"  />
-          <p>04/2022 - 06/2023</p>
-          <p>Prefeitura Municipal de Mirandópolis - Estágio em T.I.</p>
+        <img src="img/IconPrefeitura.png" alt="Prefeitura">
+        <p>04/2022 - 06/2023</p>
+        <p>Prefeitura Municipal de Mirandópolis - Estágio em T.I.</p>
       </div>
-
       <div class="portfolioItem">
-          <img src="img/iconSakashita_1.svg" alt="Sakashita" width="225px" height="225px" />
-          <p>06/2023 - 10/2023</p>
-          <p>Sakashita Supermercados - Operador de Caixa</p>
+        <img src="img/iconSakashita_1.svg" alt="Sakashita" width="225px" height="225px">
+        <p>06/2023 - 10/2023</p>
+        <p>Sakashita Supermercados - Operador de Caixa</p>
       </div>
-
       <div class="portfolioItem">
-        <img src="img/fx.svg" alt="fxsistemas" width="225px" height="225px" />
+        <img src="img/fx.svg" alt="fxsistemas" width="225px" height="225px">
         <p>10/2023 - ATUALMENTE</p>
         <p>FX Sistemas - Helpdesk / Developer Júnior</p>
       </div>
     </div>
   </section>
-
   <section id="contact">
-      <div class="container">
-          <h2>Contato</h2>
-          <p>Entre em contato comigo para discutir oportunidades de trabalho.</p>
-          <form action="https://api.staticforms.xyz/submit" id="form" method="post">
-              <input type="text" name="name" placeholder="Seu Nome" required>
-              <input type="email" name="email" placeholder="Seu E-mail" required>
-              <textarea name="message" placeholder="Sua Mensagem"></textarea required>
-              <button value="submit" type="submit"> Enviar </button>
-
-              <input type="hidden" name="accessKey" value="4dbc4305-4573-4410-8922-aa880a77f691">
-              <input type="hidden" name="redirectTo" value="https://lipaozin.github.io/thanks.html">
-          </form>
-        
-      </div>
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato comigo para discutir oportunidades de trabalho.</p>
+      <form action="https://api.staticforms.xyz/submit" id="form" method="post">
+        <input type="text" name="name" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+        <input type="hidden" name="accessKey" value="4dbc4305-4573-4410-8922-aa880a77f691">
+        <input type="hidden" name="redirectTo" value="https://lipaozin.github.io/thanks.html">
+      </form>
+    </div>
   </section>
-
   <footer>
-
-
-
     <div class="loading">
-        <svg height="48px" width="64px">
-            <polyline id="back" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
-          <polyline id="front" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
-          <polyline id="front2" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
-        </svg>
-      </div>
-
+      <svg height="48px" width="64px">
+        <polyline id="back" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+        <polyline id="front" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+        <polyline id="front2" points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"></polyline>
+      </svg>
+    </div>
     <p>&copy; 2024 Luís Felipe Cremonez. Todos os direitos reservados.</p>
-
-
-</footer>
+  </footer>
 </body>
 </html>

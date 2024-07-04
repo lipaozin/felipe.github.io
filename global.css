@@ -15,14 +15,6 @@
 
 
 
-
-
-
-
-
-
-
-
     ***********
     ** Reset **
     ***********
@@ -39,7 +31,15 @@
 
     user-select: none;  /* Não permite o usuário selecionar e ficar arrastando o texto da página*/
     user-drag: none;    /* Não permite o usuário selecionar e arrastar a imagem da página*/
-    -webkit-user-drag: none;
+
+    
+
+ /*-------------------------------------
+ ---------------------------------------
+ ---- Aplicando para os navegadores ----
+ ---------------------------------------  
+---------------------------------------*/
+    -webkit-user-drag: none;  
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
@@ -61,14 +61,15 @@
     --background-color-3: #f8f8ff; /* footer */
     --background-color-4: #c6c6c6; /* mobile menu options on hover */
 
-    --color-1: #f6f6ff;
+    --color-1: #f6f6ff;  /* Criando Variável de cores*/
     --color-2: #f8f8ff;
     --color-3: #c3c3c3;
     --color-4: #7f4d96;
 
-    --text-shadow-color: #7159c1; /* header */
+    --text-shadow-color: #7159c1; /* Sombra da variável color */ 
     --progress-bar-background-color: #767676;
 
+    /* Variáveis disponibilizadas do Google Fonts*/
     --font-1: Roboto Mono;
     --font-2: Roboto;
     --font-3: sans-serif;
