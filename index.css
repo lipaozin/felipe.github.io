@@ -55,17 +55,15 @@ body {
     transition: background-color 0.3s;
     padding-top: 8px;
     padding-left: 8px;
-
 }
 
-.nav-list li a:hover {
-    background-color: #555;
-}
+
 
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    color: transparent;
 }
 
 .menu-toggle span {
@@ -109,13 +107,43 @@ header {
     padding: 40px 0;
 }
 
-.aboutMeContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+
+
+
+
+/* Estilização animação abaixo do form de Contato */
+
+.loading svg polyline {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .loading svg polyline#back {
+    fill: none;
+    stroke: #ff4d4d38;
+  }
+  
+  .loading svg polyline#front {
+    fill: none;
+    stroke: #a94dff;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 1.4s linear infinite;
+  }
+  
+  @keyframes dash_682 {
+    72.5% {
+      opacity: 0;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  ---------------------------------------------------------------------------------------------------------------------------------------
 
 .reachMe {
     flex: 1;
@@ -125,12 +153,13 @@ header {
     flex: 1;
     display: flex;
     justify-content: center;
+    height: 30rem;
 }
 
 .imageContainer img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 #aboutMe {
@@ -154,8 +183,6 @@ header {
     align-items: space-around;
     transition: transform 0.3s;
     cursor: pointer;
-
-
 }
 
 .reachMeIcon:hover {
@@ -255,11 +282,11 @@ form button {
     background-color: #4CAF50;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.7s;
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #45a0498c;
 }
 
 footer {
@@ -303,6 +330,16 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .nav-list {
+        color: #000;
+        background-color: #f4f4f4;
+    }
+    .nav-list li {
+        padding: 6px;
+    }
+    .nav-list li a{
+        color: #000;
+    }
     .aboutMeContainer {
         flex-direction: column;
         text-align: center;
@@ -311,4 +348,14 @@ footer {
     .imageContainer {
         margin-top: 20px;
     }
+}
+
+@media screen and (min-width: 601px){
+
+
+.nav-list li a:hover {
+    background-color: #555;
+
+}
+
 }
