@@ -36,7 +36,10 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #1a1a1a;
+    position: fixed;
+    width: 100%;
 }
+
 
 .nav-list {
     list-style: none;
