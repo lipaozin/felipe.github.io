@@ -244,6 +244,66 @@ header {
     margin-bottom: 10px;
 }
 
+.sectionParceiros{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+.sectionParceiros h1{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+.sectionParceiros img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 100px;
+    width: 175px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+.sectionParceiros img:hover{
+
+    transform: scale(1.2);
+
+}
+
+.tooltip .imagem {
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona a tooltip acima da imagem */
+    left: 50%;
+    margin-left: -70px; /* Ajusta a posição horizontal da tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 #contact {
     background: #1a1a1a;
     color: #fff;
@@ -304,11 +364,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 14px;
 }
 
 .loading svg {
     width: 100px;
     height: auto;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
