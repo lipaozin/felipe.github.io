@@ -305,6 +305,14 @@ header {
     visibility: visible;
     opacity: 1;
   }
+  .tooltip img{
+    border-radius: 12rem;
+    transition: all 0.7s ease;
+  }
+  .tooltip img:hover{
+    background-color: #a94dff;
+    border-radius: 100px;
+  }
   
 #contact {
     background: #1a1a1a;
