@@ -278,32 +278,34 @@ header {
 
 }
 
-.tooltip .imagem {
-    width: 100%; /* Ajuste conforme necessário */
-}
-
-.tooltip .tooltiptext {
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
     visibility: hidden;
-    width: 140px;
-    background-color: black;
+    width: 120px;
+    background-color: rgb(188, 15, 223);
     color: #fff;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 5px;
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Posiciona a tooltip acima da imagem */
+    bottom: 100%; /* Altere para ajustar a posição da tooltip */
     left: 50%;
-    margin-left: -70px; /* Ajusta a posição horizontal da tooltip */
+    margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
+  }
+  
+  .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
-
+  }
+  
 #contact {
     background: #1a1a1a;
     color: #fff;
