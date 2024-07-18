@@ -306,7 +306,7 @@ header {
     opacity: 1;
   }
   .tooltip img{
-    border-radius: 12rem;
+   /* border-radius: 12rem;*/
     transition: all 0.7s ease;
   }
   .tooltip img:hover{
