@@ -50,14 +50,12 @@ body {
 
 }
 
-.nav-list li a {
+.nav-list a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    padding-top: 8px;
-    padding-left: 8px;
 }
 
 
@@ -278,42 +276,82 @@ header {
 
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
+.tooltipMateus {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltipMateus .tooltiptextMaffi {
+  visibility: hidden;
+  width: 120px;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: relative;
+  z-index: 1;
+  left: 23.50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipMateus:hover > .tooltiptextMaffi {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltipMateus img{
+  transition: all 0.7s ease;
+}
+
+.tooltipMateus img:hover{
+  background-color: rgb(145, 219, 155);
+  border-radius: 100px;
+}
+
+
+
+  -----------------------------
+
+.tooltipFelix {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltipFelix .tooltiptextFelix {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(188, 15, 223);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: relative;
+  z-index: 1;
+  left: 33.50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipFelix:hover > .tooltiptextFelix {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltipFelix img{
+  transition: all 0.7s ease;
+}
+
+.tooltipFelix img:hover{
+  background-color: #a94dff;
+  border-radius: 100px;
+}
+
   
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: rgb(188, 15, 223);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%; /* Altere para ajustar a posição da tooltip */
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-  .tooltip img{
-   /* border-radius: 12rem;*/
-    transition: all 0.7s ease;
-  }
-  .tooltip img:hover{
-    background-color: #a94dff;
-    border-radius: 100px;
-  }
-  
+
+
 #contact {
     background: #1a1a1a;
     color: #fff;
@@ -404,7 +442,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .nav-list {
         color: #000;
         background-color: #f4f4f4;
@@ -425,12 +463,14 @@ footer {
     }
 }
 
-@media screen and (min-width: 601px){
-
-
-.nav-list li a:hover {
-    background-color: #555;
-
+@media screen and (min-width: 601px) {
+    .nav-list a:hover {
+        background-color: #555;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .nav-list a {
+        color: #363636;
+    }
 }
